@@ -1,10 +1,10 @@
 # Waldo :computer_mouse:
 
-**Waldo** is a wireless 3D pen designed for intuitive manipulation of 3D objects in digital environments such as VR, AR, and traditional computer screens. This device integrates advanced motion tracking with wireless communication for seamless user interaction.
+**Waldo** is a wireless 3D pen designed for intuitive manipulation of 3D objects in digital environments such as VR, AR, and traditional computer screens. This device integrates motion tracking with wireless communication for seamless user interaction.
 
 ## Features
 
-- **Microcontroller:** Arduino Nano (or any Arduino model)
+- **Microcontroller:** Arduino Nano (or any Arduino model) as transmitter + Arduino Leonardo (or any Arduino model with HID support) as receiver
 - **HID Support:** Compatible with Windows, macOS, and Linux using standard HID protocols. 💻🖥️
 - **3D Motion Tracking:** Utilizes MPU6050 sensor for accurate motion capture. 🎯
 - **Button Inputs:** Includes left and right click buttons.
@@ -19,9 +19,6 @@
   - **SDA:** I2C Data
   - **SCL:** I2C Clock
   - **Buttons:** Connect to digital inputs
-
-- **Battery Connection:** Features a rechargeable Li-Po battery with integrated charging circuit on the custom board.
-- **Custom Board:** Designed to house all components securely.
 
 ## Installation
 
@@ -38,9 +35,8 @@
 
 ## Troubleshooting
 
-- **Connection Issues:** Ensure Bluetooth or wireless module is correctly paired and within range.
+- **Connection Issues:** Ensure wireless module is correctly paired and within range.
 - **Tracking Problems:** Recalibrate if motion tracking appears inaccurate.
-- **Battery Alerts:** Recharge when low battery warnings are indicated.
 
 ## License
 
